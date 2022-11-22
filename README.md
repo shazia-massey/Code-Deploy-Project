@@ -1,0 +1,3 @@
+# Project-CodeDeploy
+
+we have the source code and appspec.yml file as a developer and we are going to push those into GitHub or S3 or CodeCommit and then we are going to trigger a deploymet. The CodeDeploy agent will report on the success or the failure of the deployment on the instance after following the instructions in appspec.yml. The deployment will be picked up by the EC2 instances because they are polling for codedeploy to do something and then codedeploy will instruct theses instances to download the code from Github or S3 or Codecommit and the appspec.yml file onto them and do the deployment thanks to the specifications in the appspec.yml.
